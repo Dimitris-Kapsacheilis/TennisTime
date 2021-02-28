@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/511825__mikejonesbones__tennis-racket-1.wav-e9096f51384c424c5b37b71dccba85d4.sample"
+
+[deps]
+
+source_file="res://2d/Sound/511825__mikejonesbones__tennis-racket-1.wav"
+dest_files=[ "res://.import/511825__mikejonesbones__tennis-racket-1.wav-e9096f51384c424c5b37b71dccba85d4.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
