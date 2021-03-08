@@ -11,7 +11,7 @@ onready var swipe = get_node("/root/2d Tennis/Swipe")
 # var a = 2
 # var b = "text"
 
-var SPEED = 300
+var SPEED = 450
 var direction = ""
 var distance = Vector2(0,0)
 var rng = RandomNumberGenerator.new()
@@ -58,22 +58,44 @@ func _ready():
 
 
 func _on_HitPoint_body_entered(body):
-	if abs(distance[0]) <=35 && abs(distance[1]) <= 85:
+	pass
+#	if abs(distance[0]) <=35 && abs(distance[1]) <= 85:
+#		#print("reached point")
+#		#print(direction)
+#		rng.randomize()
+#		var randPoint = rng.randi_range(0,1)
+#		if randPoint:
+#			if pointC:
+#				swipe.direction = ""
+#				direction = global_position.direction_to(pointC.global_position)
+#				distance = pointC.global_position - position
+#		elif !randPoint:
+#			if pointD:
+#				swipe.direction = ""
+#				direction = global_position.direction_to(pointD.global_position)
+#				distance =  pointD.global_position - position
+#
+
+
+
+
+
+func _on_HitZone_body_entered(body):
+	#if abs(distance[0]) <=35 && abs(distance[1]) <= 85:
+
 		#print("reached point")
 		#print(direction)
-		rng.randomize()
-		var randPoint = rng.randi_range(0,1)
-		if randPoint:
-			if pointC:
-				swipe.direction = ""
-				direction = global_position.direction_to(pointC.global_position)
-				distance = pointC.global_position - position
-		elif !randPoint:
-			if pointD:
-				swipe.direction = ""
-				direction = global_position.direction_to(pointD.global_position)
-				distance =  pointD.global_position - position
-  
-
+	rng.randomize()
+	var randPoint = rng.randi_range(0,1)
+	if randPoint:
+		if pointC:
+			swipe.direction = ""
+			direction = global_position.direction_to(pointC.global_position)
+			distance = pointC.global_position - position
+	elif !randPoint:
+		if pointD:
+			swipe.direction = ""
+			direction = global_position.direction_to(pointD.global_position)
+			distance =  pointD.global_position - position
 
 
